@@ -1,0 +1,15 @@
+GET http://localhost:3001/api/posts
+###
+POST http://localhost:3001/api/posts
+Content-Type: application/json
+
+{
+    "caption":"test3",
+    "user":"62e95ba5bb02f833bf62505d",
+    "image":"https://www.planetware.com/wpimages/2020/02/italy-in-pictures-beautiful-places-to-photograph-venice-canal.jpg",
+    "id":"62e993c5ac940ef1b2258093"
+}
+###
+DELETE http://localhost:3001/api/posts/62eab223a004ddb196fbe7ba
+###
+DELETE http://localhost:3001/api/posts

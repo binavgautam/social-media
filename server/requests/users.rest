@@ -1,0 +1,15 @@
+GET http://localhost:3001/api/users
+###
+GET http://localhost:3001/api/users/62e98b65bd143685a8d7011f
+###
+POST http://localhost:3001/api/users
+Content-Type: application/json
+
+{
+    "username":"alison",
+    "name":"alison",
+    "email":"a@b.com",
+    "password":"alison"
+}
+###
+DELETE http://localhost:3001/api/users

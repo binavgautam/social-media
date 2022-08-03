@@ -1,12 +1,17 @@
 const mongoose = require("mongoose");
 
 const commentSchema = new mongoose.Schema({
+  comment: {
+    type: String,
+    required: true,
+  },
   post: {
     type: mongoose.Schema.Types.ObjectId,
-    ref: "Posts",
+    ref: "Post",
   },
   user: {
-    type: String,
+    type: mongoose.Schema.Types.ObjectId,
+    ref: "User",
   },
 });
 
@@ -18,4 +23,4 @@ commentSchema.set("toJSON", {
   },
 });
 
-module.exports = mongoose.model("Comments", commentSchema);
+module.exports = mongoose.model("Comment", commentSchema);

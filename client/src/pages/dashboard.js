@@ -4,9 +4,11 @@ import PostList from "../components/Posts/PostList";
 
 export default function Dashboard() {
   return (
-    <div>
-      <PostList />
+    <div className="flex flex-col mx-auto items-center">
       <div>
+        <PostList />
+      </div>
+      <div className="flex justify-end">
         <Link className="p-2" to="/">
           home
         </Link>

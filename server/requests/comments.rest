@@ -1,0 +1,12 @@
+GET http://localhost:3001/api/posts/62e9941a2b9280b1378698ef/comments
+###
+POST http://localhost:3001/api/posts/62e9941a2b9280b1378698ef/comments
+Content-Type: application/json
+
+{
+    "comment": "pizza",
+    "user": "62e98b65bd143685a8d7011f",
+    "post": "62e9941a2b9280b1378698ef"
+}
+###
+DELETE http://localhost:3001/api/posts/62e9941a2b9280b1378698ef/comments/62eab23aa004ddb196fbe7c1
